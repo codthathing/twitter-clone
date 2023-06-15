@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+#side-menu {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    color: white;  
+    transition: all 200ms linear;
+}
+
+.text:hover {
+    color: #1DA1F2;
+}
+
+#bacBtn {
+    color: #1DA1F2;
+    font-weight: bold;
+}
+
+#botDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.botIcon {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+@media all and (max-width: 767px) {
+    #home-page {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    #navbar {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #side-menu {
+        width: 100%;
+        right: 100%;
+        top: 0;
+        height: 100vh;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+        position: fixed;
+        animation: closeMenu 200ms linear;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #headTab {
+        display: none;
+    }
+
+    @keyframes closeMenu {
+        0% {right: 0;}
+        50% {right: 50%;}
+        100% {right: 100%;}
+    }
+
+    #side-menu.openMenu {
+        right: 0;
+        animation: showMenu 200ms linear;
+    }
+
+    @keyframes showMenu {
+        0% {right: 100%;}
+        50% {right: 50%;}
+        100% {right: 0;}
+    }
+
+
+    .sidDiv {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .defImg {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    .names {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 0.5rem 0 0.25rem 0;
+    } 
+
+    .subNames {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0.25rem 0 2rem 0;
+    }
+
+    #textTab {
+        display: none;
+    }
+
+    .text {
+        font-size: 1.2rem; 
+        margin: 2rem 0;
+    }
+
+    #bacHome {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem 1rem 1rem 2rem;
+        height: 100vh;
+        font-size: 2rem;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #home-page {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    #navbar {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #side-menu {
+        width: 100%;
+        right: 100%;
+        top: 0;
+        height: 100vh;
+        padding: 2rem 1rem 1rem 1rem;
+        position: fixed;
+        animation: closeMenu 200ms linear;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #headTab {
+        display: none;
+    }
+
+    @keyframes closeMenu {
+        0% {right: 0;}
+        50% {right: 50%;}
+        100% {right: 100%;}
+    }
+
+    #side-menu.openMenu {
+        right: 0;
+        animation: showMenu 200ms linear;
+    }
+
+    @keyframes showMenu {
+        0% {right: 100%;}
+        50% {right: 50%;}
+        100% {right: 0;}
+    }
+
+
+    .sidDiv {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .defImg {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+
+    .names {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin: 1rem 0 0.5rem 0;
+    } 
+
+    .subNames {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 1rem 0 3rem 0;
+    }
+
+    #textTab {
+        display: none;
+    }
+
+    .text {
+        font-size: 2rem; 
+        margin: 3rem 0;
+    }
+
+    #bacHome {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1.5rem 1.5rem 1.5rem 3rem;
+        height: 100vh;
+        font-size: 3rem;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+
+
+
+
+@media all and (min-width: 1024px) {
+    #home-page {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    #navbar {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .defImg {
+        display: none;
+    }
+
+    #sideIcon {
+        display: none;
+    }
+
+    #bacHome {
+        display: none;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 25% 45% 30%;
+    }
+
+    #side-menu {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .sidDiv {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #header {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .names {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 0.5rem 0 0.25rem 0;
+    } 
+
+    .subNames {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    .text {
+        font-size: 1.2rem; 
+        margin: 1.5rem 0;
+    }
+
+    #headTab {
+        font-size: 1.5rem;
+    }
+
+    #botDiv {
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Twitter Page</title>
+</head>
+<body>
+    <!-- <div id="body"> -->
+    <section id="side-menu">
+
+        <section class="sidDiv">
+            <img src="images/fofana.jpg" class="defImg" alt="">
+            <img src="images/580b57fcd9996e24bc43c53e.png" alt="" id="header">
+            <h5 class="names">Olusegun Samson</h5>
+            <p class="subNames">@Oluse_samson</p>
+        </section>
+        <section class="sidDiv">
+            <div id="textTab" class="text">Home</div>
+            <div class="text">Profile</div>
+            <div id="textTab" class="text">Notifications</div>
+            <div id="textTab" class="text">Message</div>
+            <div class="text">Bookmarks</div>
+            <div class="text">Discover</div>
+        </section>
+        <section>
+            <p class="text">Configuration</p>
+            <p class="text">Help Center</p>
+        </section>
+        <div id="bacHome">
+            <i class="fa-duotone fa-circle-question" id="bacBtn"></i>
+        </div>
+
+    </section>
+
+    <main id="home-page">
+
+        <nav id="navbar">
+            <ul id="navbar-nav">
+                <li class="nav-item" id="sideIcon"><img src="images/fofana.jpg" id="sideBtn" class="defImg" alt=""></li>
+                <li class="nav-item"><img src="images/580b57fcd9996e24bc43c53e.png" alt="" class="defImg"><p id="headTab">Home</p></li>
+                <li class="nav-item" id="menu-icon"><i class="fa-thin fa-stars" style="color: #1DA1F2;"></i></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div>
+                <img src="" alt="">
+                <main>
+                    <div>
+                        <h5>Name</h5>
+                        <span>
+                            <p>@name</p>
+                            <p>1hr</p>
+                        </span>
+                    </div>
+                    <article>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit?
+                    </article>
+                </main>
+                <span>
+                    <span>&times;</span>
+                    <span>&times;</span>
+                    <span>&times;</span>
+                </span>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="botDiv">
+        <p class="botIcon">H</p>
+        <p class="botIcon">T</p>
+        <p class="botIcon">N</p>
+        <p class="botIcon">M</p>
+    </div>
+
+    <section id="trend-div">
+
+    </section>
+    <!-- </div> -->
+
+
+
+
+    <script>
+        document.getElementById('sideBtn').addEventListener('click', ()=> {
+            document.getElementById('side-menu').classList.add('openMenu')
+        })
+        document.getElementById('bacBtn').addEventListener("click", ()=> {
+            document.getElementById('side-menu').classList.remove('openMenu')
+        })
+    </script>
+</body>
+</html>
