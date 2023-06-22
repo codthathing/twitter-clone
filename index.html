@@ -48,40 +48,64 @@
             </ul>
         </nav>
 
-        <section>
-            <div>
-                <img src="" alt="">
-                <main>
-                    <div>
-                        <h5>Name</h5>
-                        <span>
-                            <p>@name</p>
-                            <p>1hr</p>
-                        </span>
+        <section id="msgMenu">
+            <div class="msgDiv">
+                <img src="images/unknown_black.jpeg" class="msgPro" alt="">
+                <div>
+                    <main class="msgMain">
+                        <div class="msgHead">
+                            <h5 class="msgNames">name</h5>
+                            <!-- <span> -->
+                                <p class="msgSubnames">@name</p>
+                                <p class="msgSubnames">1hr</p>
+                            <!-- </span> -->
+                        </div>
+                        <article class="msgText">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit? Lorem ipsum dolor, sit 
+                            amet consectetur adipisicing elit. A expedita voluptatum incidunt quisquam autem sapiente!
+                        </article>
+                    </main>
+                    <div class="msgIcons">
+                        <span class="msgIcon">&times;</span>
+                        <span class="msgIcon">&times;</span>
+                        <span class="msgIcon">&times;</span>
                     </div>
-                    <article>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit?
-                    </article>
-                </main>
-                <span>
-                    <span>&times;</span>
-                    <span>&times;</span>
-                    <span>&times;</span>
-                </span>
+                </div>
             </div>
         </section>
 
     </main>
 
     <div id="botDiv">
-        <p class="botIcon">H</p>
-        <p class="botIcon">T</p>
+        <p class="botIcon" id="homIcon">H</p>
+        <p class="botIcon" id="trndIcon">T</p>
         <p class="botIcon">N</p>
         <p class="botIcon">M</p>
     </div>
 
     <section id="trend-div">
+        <nav>
+            <ul class="trdNav">
+                <li class="trdItem"><img src="images/fofana.jpg" alt="" class="defImg"></li>
+                <li class="trdItem"><input type="text" placeholder="Search Twitter" name="" id="trdInput"></li>
+            </ul>
+        </nav>
 
+        <main>
+            <h1>Worldwide trends</h1>
+            <section id="latDiv">
+                <div class="latItem">
+                    <var>1</var>
+                    <div>
+                        <p>Zidane</p>
+                        <p>1.29M tweets</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+
+            </section>
+        </main>
     </section>
     <!-- </div> -->
 
@@ -90,10 +114,19 @@
 
     <script>
         document.getElementById('sideBtn').addEventListener('click', ()=> {
+            document.getElementById("botDiv").classList.add("closeBot")
             document.getElementById('side-menu').classList.add('openMenu')
         })
         document.getElementById('bacBtn').addEventListener("click", ()=> {
+            document.getElementById("botDiv").classList.remove("closeBot")    
             document.getElementById('side-menu').classList.remove('openMenu')
+        })
+
+        document.getElementById("homIcon").addEventListener("click", () => {
+            document.getElementById("trend-div").classList.remove("openTrend")
+        })
+        document.getElementById("trndIcon").addEventListener("click", () => {
+            document.getElementById("trend-div").classList.add("openTrend")
         })
     </script>
 </body>

@@ -15,6 +15,10 @@ body {
     align-items: center;
 }
 
+#navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+
 .nav-item {
     list-style: none;
 }
@@ -22,6 +26,22 @@ body {
 #side-menu {
     background-color: black;
     color: white;
+}
+
+.sidDiv {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.names {
+    letter-spacing: 1px;
+}
+
+.subNames {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.defImg {
+    border-radius: 50%;
 }
 
 .text {
@@ -45,13 +65,72 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
+    background-color: black;
+    z-index: 100;
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
 }
 
-.botIcon {
-    font-size: 1.5rem;
+.msgDiv {
+    display: flex;
 }
 
+.msgPro {
+    border-radius: 50%;
+}
+
+.msgHead {
+    display: flex;
+    align-items: center;
+}
+
+.msgSubnames {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.msgIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.msgIcon {
+    font-weight: 500;
+    transition: all 200ms linear;
+}
+
+.msgIcon:hover {
+    color: #1DA1F2;
+}
+
+#trend-div {
+    background-color: black;
+}
+
+.trdNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.trdItem {
+    list-style: none;
+}
+
+
+#trdInput {
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: hidden;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+#trdInput:focus {
+    color: #1DA1F2;
+}
 
 
 
@@ -63,7 +142,6 @@ body {
 
     #navbar {
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     #side-menu {
@@ -91,6 +169,7 @@ body {
     }
 
     #side-menu.openMenu {
+        z-index: 100;
         right: 0;
         animation: showMenu 200ms linear;
     }
@@ -101,26 +180,18 @@ body {
         100% {right: 0;}
     }
 
-
-    .sidDiv {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
-
     .defImg {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
     }
 
     .names {
         font-size: 1rem;
-        letter-spacing: 1px;
         margin: 0.5rem 0 0.25rem 0;
     } 
 
     .subNames {
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.5);
         margin: 0.25rem 0 2rem 0;
     }
 
@@ -144,6 +215,69 @@ body {
         display: flex;
         align-items: flex-end;
     }
+
+    #botDiv {
+        padding: 1rem;
+    }
+
+    #botDiv.closeBot {
+        z-index: 0;
+    }
+
+    .botIcon {
+        font-size: 1.5rem;
+    }
+
+    .botIcon:hover {
+        color: #1DA1F2;
+    }
+
+    #msgMenu {
+        margin-top: 2rem;
+    }
+
+    .msgDiv {
+        gap: 0.5rem;
+    }
+
+    .msgPro {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .msgHead {
+        gap: 0.15rem;
+    }
+
+    .msgNames {
+        font-size: 1rem;
+    }
+    
+    .msgSubnames {
+        font-size: 1rem;
+    }
+
+    .msgText {
+        font-size: 0.8rem;
+        margin: 0.25rem 0 1rem 0;
+    }
+
+    .msgIcon {
+        font-size: 2rem;
+    }
+
+    #trend-div {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    
+    #trend-div.openTrend {
+        left: 0;
+    }
 }
 
 
@@ -158,7 +292,6 @@ body {
 
     #navbar {
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     #side-menu {
@@ -186,6 +319,7 @@ body {
     }
 
     #side-menu.openMenu {
+        z-index: 100;
         right: 0;
         animation: showMenu 200ms linear;
     }
@@ -196,26 +330,18 @@ body {
         100% {right: 0;}
     }
 
-
-    .sidDiv {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
-
     .defImg {
         width: 5rem;
         height: 5rem;
-        border-radius: 50%;
     }
 
     .names {
         font-size: 2rem;
-        letter-spacing: 1px;
         margin: 1rem 0 0.5rem 0;
     } 
 
     .subNames {
         font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.5);
         margin: 1rem 0 3rem 0;
     }
 
@@ -235,9 +361,72 @@ body {
         top: 0;
         padding: 1.5rem 1.5rem 1.5rem 3rem;
         height: 100vh;
-        font-size: 3rem;
+        font-size: 4rem;
         display: flex;
         align-items: flex-end;
+    }
+
+    #botDiv {
+        padding: 2rem;
+    }
+
+    #botDiv.closeBot {
+        z-index: 0;
+    }
+
+    .botIcon {
+        font-size: 2.5rem;
+    }
+
+    .botIcon:hover {
+        color: #1DA1F2;
+    }
+
+    #msgMenu {
+        margin-top: 3rem;
+    }
+
+    .msgDiv {
+        gap: 1rem;
+    }
+
+    .msgPro {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .msgHead {
+        gap: 0.5rem;
+    }
+
+    .msgNames {
+        font-size: 1.75rem;
+    }
+    
+    .msgSubnames {
+        font-size: 1.75rem;
+    }
+
+    .msgText {
+        font-size: 1.5rem;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    .msgIcon {
+        font-size: 3rem;
+    }
+
+    #trend-div {
+        padding: 1rem;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    
+    #trend-div.openTrend {
+        left: 0;
     }
 }
 
@@ -253,7 +442,6 @@ body {
 
     #navbar {
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     .defImg {
@@ -277,10 +465,6 @@ body {
         padding: 1.5rem 1rem 1rem 1rem;
     }
 
-    .sidDiv {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
-
     #header {
         width: 4rem;
         height: 4rem;
@@ -290,13 +474,11 @@ body {
 
     .names {
         font-size: 1rem;
-        letter-spacing: 1px;
         margin: 0.5rem 0 0.25rem 0;
     } 
 
     .subNames {
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.5);
         margin: 0.5rem 0 1.5rem 0;
     }
 
@@ -311,5 +493,43 @@ body {
 
     #botDiv {
         display: none;
+    }
+
+    #msgMenu {
+        margin-top: 2rem;
+    }
+
+    .msgDiv {
+        gap: 0.75rem;
+    }
+
+    .msgPro {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .msgHead {
+        gap: 0.15rem;
+    }
+
+    .msgNames {
+        font-size: 1.2rem;
+    }
+    
+    .msgSubnames {
+        font-size: 1.2rem;
+    }
+
+    .msgText {
+        font-size: 1rem;
+        margin: 0.25rem 0 1rem 0;
+    }
+
+    .msgIcon {
+        font-size: 2.5rem;
+    }
+
+    #trend-div {
+        padding: 1rem;
     }
 }
