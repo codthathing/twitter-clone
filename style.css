@@ -9,14 +9,25 @@ body {
     color: white;
 }
 
+#menu-icon {
+    font-size: 2rem;
+    cursor: default;
+    color: white;
+}
+
+#menu-icon.colorMenuIcon {
+    color: black;
+}
+
+body.colorBody {
+    background-color: white;
+    color: black;
+}
+
 #navbar-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#navbar {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .nav-item {
@@ -28,16 +39,31 @@ body {
     color: white;
 }
 
+#side-menu.colorSide {
+    background-color: white;
+    color: black;
+}
+
 .sidDiv {
     border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
+.sidDiv.colorSidDiv {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 .names {
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .subNames {
     color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.subNames.colorSubnames {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .defImg {
@@ -47,6 +73,11 @@ body {
 .text {
     color: white;  
     transition: all 200ms linear;
+    cursor: pointer;
+}
+
+.text.colorText {
+    color: black; 
 }
 
 .text:hover {
@@ -54,8 +85,16 @@ body {
 }
 
 #bacBtn {
-    color: #1DA1F2;
+    color: white;
     font-weight: bold;
+}
+
+#bacBtn.colorBacbtn {
+    color: black;
+}
+
+#bacBtn:hover {
+    color: #1DA1F2;
 }
 
 #botDiv {
@@ -67,11 +106,27 @@ body {
     width: 100%;
     background-color: black;
     z-index: 100;
-    border-top: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+#botDiv.colorBotdiv {
+    background-color: white;
+    color: black;
+}
+
+.botIcon {
+    cursor: default;
 }
 
 .msgDiv {
     display: flex;
+}
+
+.msgDiv:last-child {
+    border-bottom: none;
+}
+
+.msgDiv:last-child.colorMsgDiv {
+    border-bottom: none;
 }
 
 .msgPro {
@@ -87,6 +142,10 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.msgSubnames.colorMsgsubnames {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .msgIcons {
     display: flex;
     justify-content: space-between;
@@ -96,6 +155,7 @@ body {
 .msgIcon {
     font-weight: 500;
     transition: all 200ms linear;
+    cursor:default;
 }
 
 .msgIcon:hover {
@@ -104,33 +164,123 @@ body {
 
 #trend-div {
     background-color: black;
+    overflow-y: auto;
 }
 
-.trdNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
+#trend-div.colorTrndDiv {
+    background-color: white;
 }
 
 .trdItem {
     list-style: none;
 }
 
-
 #trdInput {
     outline: none;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.1);
     border: hidden;
-    border-radius: 1.5rem;
-    padding: 0.75rem;
-    font-size: 1rem;
+    width: 100%;
+}
+
+#trdInput.colorTrdinput {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #trdInput:focus {
     color: #1DA1F2;
 }
+
+#latDiv {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+}
+
+#latDiv.colorLatdiv {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.latItem {
+    display: flex;
+    cursor: pointer;
+}
+
+.latItem:last-child {
+    border-bottom: none;
+}
+
+.latItem:last-child.colorLatitem {
+    border-bottom: none;
+}
+
+.latNum {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latNum.colorLatNum {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.latTrend {
+    text-transform: capitalize;
+}
+
+.latTwt {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latTwt.colorLatTwt {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#trdFolDiv {
+    border-radius: 1rem;
+}
+
+.folDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.folDiv:last-child.colorFoldiv {
+    border-bottom: none;
+}
+
+.folDiv:last-child {
+    border-bottom: none;
+}
+
+.folSubDiv {
+    display: flex;
+}
+
+.folImg {
+    border-radius: 50%;  
+}
+
+.folName {
+    font-weight: 500;
+}
+
+.folSubname {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.folSubname.colorFolsub {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.folBtn {
+    background: transparent;
+    border: 2px solid #1DA1F2;
+    color: #1DA1F2;
+    font-weight: 500;
+    border-radius: 2rem;
+}
+
+
+
 
 
 
@@ -142,6 +292,11 @@ body {
 
     #navbar {
         padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    }
+    
+    #navbar.colorNavbar {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     }
 
     #side-menu {
@@ -216,12 +371,21 @@ body {
         align-items: flex-end;
     }
 
+    #bacHome.colorBackhome {
+        background-color: white;
+    }
+
     #botDiv {
         padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.75);
     }
 
     #botDiv.closeBot {
         z-index: 0;
+    }
+
+    #botDiv.colorBotdiv {
+        border-top: 1px solid rgba(0, 0, 0, 0.75);
     }
 
     .botIcon {
@@ -238,6 +402,12 @@ body {
 
     .msgDiv {
         gap: 0.5rem;
+        border-bottom: 0.25px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 1rem;
+    }
+
+    .msgDiv.colorMsgDiv {
+        border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
     }
 
     .msgPro {
@@ -259,7 +429,7 @@ body {
 
     .msgText {
         font-size: 0.8rem;
-        margin: 0.25rem 0 1rem 0;
+        margin: 0.25rem 0 0.5rem 0;
     }
 
     .msgIcon {
@@ -273,10 +443,126 @@ body {
         width: 100%;
         top: 0;
         left: 100%;
+        animation: closeTrend 100ms linear;
+    }
+
+    @keyframes closeTrend {
+        from {left: 0;}
+        to {left: 100%;}
     }
     
     #trend-div.openTrend {
         left: 0;
+        animation: showTrend 100ms linear;
+    }
+
+    @keyframes showTrend {
+        from {left: 100%;}
+        to {left: 0;}
+    }
+
+    #trdText {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .trdNav {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        padding-bottom: 0.5rem;
+        gap: 2rem;
+    }
+
+    #trdInput {
+        border-radius: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #latDiv {
+        padding: 0.25rem;
+    }
+
+    .latItem {
+        gap: 1rem;
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem.colorLatitem {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latItem:first-child.colorLatitem {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latNum {
+        font-size: 1rem;
+    }
+
+    .latTrend {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .latTwt {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    #trdFolDiv {
+        margin-top: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 0.25rem;
+    }
+
+    #trdFolDiv.colorTrdFolDiv {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv {
+        padding: 0.75rem 0.5rem;
+        padding-right: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv.colorFoldiv {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv:first-child.colorFoldiv {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folImg {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.75rem;
+    }
+
+    .folName {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .folSubname {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    .folBtn {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -292,6 +578,11 @@ body {
 
     #navbar {
         padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+    }
+    
+    #navbar.colorNavbar {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.75);
     }
 
     #side-menu {
@@ -366,8 +657,17 @@ body {
         align-items: flex-end;
     }
 
+    #bacHome.colorBackhome {
+        background-color: white;
+    }
+
     #botDiv {
         padding: 2rem;
+        border-top: 2px solid rgba(255, 255, 255, 0.75);
+    }
+
+    #botDiv.colorBotdiv {
+        border-top: 2px solid rgba(0, 0, 0, 0.75);
     }
 
     #botDiv.closeBot {
@@ -388,6 +688,12 @@ body {
 
     .msgDiv {
         gap: 1rem;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 1.5rem;
+    }
+
+    .msgDiv.colorMsgDiv {
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
     }
 
     .msgPro {
@@ -417,16 +723,137 @@ body {
     }
 
     #trend-div {
-        padding: 1rem;
+        padding: 2rem 1rem 8rem 1rem;
         position: fixed;
         height: 100vh;
         width: 100%;
         top: 0;
         left: 100%;
+        animation: closeTrend 100ms linear;
     }
-    
+
+    @keyframes closeTrend {
+        from {left: 0;}
+        to {left: 100%;}
+    }
+
     #trend-div.openTrend {
         left: 0;
+    animation: showTrend 100ms linear;
+    }
+
+    @keyframes showTrend {
+        from {left: 100%;}
+        to {left: 0;}
+    }
+
+    #trdText {
+        padding: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .trdNav {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        padding-bottom: 1rem;
+        gap: 4rem;
+    }
+
+    #trdInput {
+        border-radius: 2rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    #latDiv {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 0.5rem;
+    }
+
+    #latDiv.colorLatdiv {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latItem {
+        gap: 2rem;
+        padding: 1rem 0.75rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem:first-child {
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem.colorLatitem {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latItem:first-child.colorLatitem {
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latNum {
+        font-size: 1.5rem;
+    }
+
+    .latTrend {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .latTwt {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    #trdFolDiv {
+        margin-top: 2rem;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 0.5rem;
+    }
+
+    #trdFolDiv.colorTrdFolDiv {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv {
+        padding: 1rem 0.75rem;
+        padding-right: 4rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv:first-child {
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv.colorFoldiv {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv:first-child.colorFoldiv {
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    .folImg {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 1rem;
+    }
+
+    .folName {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .folSubname {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .folBtn {
+        font-size: 1.5rem;
+        padding: 0 1rem;
     }
 }
 
@@ -442,6 +869,11 @@ body {
 
     #navbar {
         padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    }
+    
+    #navbar.colorNavbar {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     }
 
     .defImg {
@@ -501,6 +933,12 @@ body {
 
     .msgDiv {
         gap: 0.75rem;
+        border-bottom: 0.25px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 1rem;
+    }
+
+    .msgDiv.colorMsgDiv {
+        border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
     }
 
     .msgPro {
@@ -522,14 +960,110 @@ body {
 
     .msgText {
         font-size: 1rem;
-        margin: 0.25rem 0 1rem 0;
+        margin: 0.25rem 0 0.5rem 0;
     }
 
     .msgIcon {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #trend-div {
-        padding: 1rem;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    #trdText {
+        padding: 1rem 0;
+    }
+
+    #trdInput {
+        border-radius: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #latDiv {
+        margin-top: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .latItem {
+        gap: 1rem;
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .latItem.colorLatitem {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latItem:first-child.colorLatitem {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .latNum {
+        font-size: 1rem;
+    }
+
+    .latTrend {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .latTwt {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    #trdFolDiv {
+        margin-top: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 0.25rem;
+    }
+
+    #trdFolDiv.colorTrdFolDiv {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv {
+        padding: 0.75rem 0.5rem;
+        padding-right: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .folDiv.colorFoldiv {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .folDiv:first-child.colorFoldiv {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    .folImg {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.75rem;
+    }
+
+    .folName {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .folSubname {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    .folBtn {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 }

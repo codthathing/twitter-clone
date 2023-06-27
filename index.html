@@ -15,7 +15,7 @@
     <section id="side-menu">
 
         <section class="sidDiv">
-            <img src="images/fofana.jpg" class="defImg" alt="">
+            <img src="images/unknown_black.jpeg" class="defImg" alt="">
             <img src="images/580b57fcd9996e24bc43c53e.png" alt="" id="header">
             <h5 class="names">Olusegun Samson</h5>
             <p class="subNames">@Oluse_samson</p>
@@ -33,7 +33,7 @@
             <p class="text">Help Center</p>
         </section>
         <div id="bacHome">
-            <i class="fa-duotone fa-circle-question" id="bacBtn"></i>
+            <i id="bacBtn" class="fa-solid fa-house-window">&times;</i>
         </div>
 
     </section>
@@ -42,68 +42,188 @@
 
         <nav id="navbar">
             <ul id="navbar-nav">
-                <li class="nav-item" id="sideIcon"><img src="images/fofana.jpg" id="sideBtn" class="defImg" alt=""></li>
+                <li class="nav-item" id="sideIcon"><img src="images/unknown_black.jpeg" id="sideBtn" class="defImg" alt=""></li>
                 <li class="nav-item"><img src="images/580b57fcd9996e24bc43c53e.png" alt="" class="defImg"><p id="headTab">Home</p></li>
-                <li class="nav-item" id="menu-icon"><i class="fa-thin fa-stars" style="color: #1DA1F2;"></i></li>
+                <li class="nav-item"><i class="fa-solid fa-circle-half-stroke" id="menu-icon">&times; </i></li>
             </ul>
         </nav>
 
+        <script>
+            function changeIdColor(id, change) {
+                document.getElementById(id).classList.toggle(change)
+            }
+            function changeClassColor(clas, change) {
+                let classify = document.getElementsByClassName(clas)
+                for(let x=0; x<classify.length; x++) {
+                    classify[x].classList.toggle(change)
+                }
+            }
+
+
+            document.getElementById("menu-icon").addEventListener("click", ()=> {
+                document.querySelector("body").classList.toggle("colorBody")
+                changeIdColor("menu-icon", "colorMenuIcon")
+                changeIdColor("navbar", "colorNavbar")
+                changeIdColor("side-menu", "colorSide")
+                changeClassColor("sidDiv", "colorSidDiv")
+                changeClassColor("subNames", "colorSubnames")
+                changeClassColor("text", "colorText")
+                changeIdColor("bacBtn", "colorBacbtn")
+                changeIdColor("bacHome", "colorBackhome")
+                changeIdColor("botDiv", "colorBotdiv")
+                changeClassColor("msgSubnames", "colorMsgsubnames")
+                changeIdColor("trend-div", "colorTrndDiv")
+                changeIdColor("trdInput", "colorTrdinput")
+                changeIdColor("latDiv", "colorLatdiv")
+                changeClassColor("latItem", "colorLatitem")
+                changeClassColor("latTwt", "colorLatTwt")
+                changeClassColor("folSubname", "colorFolsub")
+                changeClassColor("msgDiv", "colorMsgDiv")
+                changeIdColor("trdFolDiv", "colorTrdFolDiv")
+                changeClassColor("folDiv", "colorFoldiv")
+                changeClassColor("latNum", "colorLatNum")
+            })
+        </script>
+
         <section id="msgMenu">
-            <div class="msgDiv">
-                <img src="images/unknown_black.jpeg" class="msgPro" alt="">
-                <div>
-                    <main class="msgMain">
-                        <div class="msgHead">
-                            <h5 class="msgNames">name</h5>
-                            <!-- <span> -->
-                                <p class="msgSubnames">@name</p>
-                                <p class="msgSubnames">1hr</p>
-                            <!-- </span> -->
-                        </div>
-                        <article class="msgText">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit? Lorem ipsum dolor, sit 
-                            amet consectetur adipisicing elit. A expedita voluptatum incidunt quisquam autem sapiente!
-                        </article>
-                    </main>
-                    <div class="msgIcons">
-                        <span class="msgIcon">&times;</span>
-                        <span class="msgIcon">&times;</span>
-                        <span class="msgIcon">&times;</span>
-                    </div>
-                </div>
-            </div>
+            
         </section>
+
+        <script>
+            let message = [
+                {
+                    id:1,
+                    pics:'images/olusegun.jpg',
+                    name:"olusegun",
+                    subName:"@olu_seg",
+                    time:"1hr",
+                    msgText: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit? Lorem ipsum dolor, sit /amet consectetur adipisicing elit. A expedita voluptatum incidunt quisquam autem sapiente!",
+                },
+                {
+                    id:1,
+                    pics:'images/boehly.jpeg',
+                    name:"Todd Boehly",
+                    subName:"@todd_boehly",
+                    time:"20s",
+                    msgText: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit? Lorem ipsum dolor, sit /amet consectetur adipisicing elit. A expedita voluptatum incidunt quisquam autem sapiente!",
+                },
+                {
+                    id:1,
+                    pics:'images/ronaldo.jpeg',
+                    name:"Cristiano Ronaldo",
+                    subName:"@ronaldo",
+                    time:"1d",
+                    msgText: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, reprehenderit? Lorem ipsum dolor, sit /amet consectetur adipisicing elit. A expedita voluptatum incidunt quisquam autem sapiente!",
+                }
+            ]
+            
+            let mesDiv = ``
+            message.map((text) => {
+                mesDiv = `
+                    <div class="msgDiv">
+                        <img src=${text.pics} class="msgPro" alt="">
+                        <div>
+                            <main class="msgMain">
+                                <div class="msgHead">
+                                    <h5 class="msgNames">${text.name}</h5>
+                                    <p class="msgSubnames">${text.subName}</p>
+                                    <p class="msgSubnames">${text.time}</p>
+                                </div>
+                                <article class="msgText">${text.msgText}</article>
+                            </main>
+                            <div class="msgIcons">
+                                <span class="msgIcon">&times;<i class="fa-light fa-comment" style="color: #ffffff;"></i></span>
+                                <span class="msgIcon">&times;<i class="fa-light fa-arrows-retweet" style="color: #ffffff;"></i></span>
+                                <span class="msgIcon">&times;<i class="fa-light fa-heart" style="color: #ffffff;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                `
+                document.getElementById("msgMenu").innerHTML += mesDiv 
+            })
+        </script>
 
     </main>
 
     <div id="botDiv">
-        <p class="botIcon" id="homIcon">H</p>
-        <p class="botIcon" id="trndIcon">T</p>
-        <p class="botIcon">N</p>
-        <p class="botIcon">M</p>
+        <p class="botIcon" id="homIcon">H <i class="fa-solid fa-house-window" style="color: #ffffff;"></i></p>
+        <p class="botIcon" id="trndIcon">T <i class="fa-light fa-magnifying-glass" style="color: #ffffff;"></i></p>
+        <p class="botIcon">N <i class="fa-light fa-bell" style="color: #ffffff;"></i></p>
+        <p class="botIcon">M <i class="fa-light fa-envelope" style="color: #ffffff;"></i></p>
     </div>
 
     <section id="trend-div">
         <nav>
             <ul class="trdNav">
-                <li class="trdItem"><img src="images/fofana.jpg" alt="" class="defImg"></li>
+                <li class="trdItem"><img src="images/unknown_black.jpeg" id="trdBtn" alt="" class="defImg"></li>
                 <li class="trdItem"><input type="text" placeholder="Search Twitter" name="" id="trdInput"></li>
             </ul>
         </nav>
 
         <main>
-            <h1>Worldwide trends</h1>
             <section id="latDiv">
-                <div class="latItem">
-                    <var>1</var>
-                    <div>
-                        <p>Zidane</p>
-                        <p>1.29M tweets</p>
+                <h1 id="trdText">Worldwide trends</h1>
+                <div>
+                    <div class="latItem">
+                        <p class="latNum">1</p>
+                        <div>
+                            <p class="latTrend">ronaldo</p>
+                            <p class="latTwt">1.29M tweets</p>
+                        </div>
+                    </div>
+                    <div class="latItem">
+                        <p class="latNum">2</p>
+                        <div>
+                            <p class="latTrend">chelsea</p>
+                            <p class="latTwt">602k tweets</p>
+                        </div>
+                    </div>
+                    <div class="latItem">
+                        <p class="latNum">3</p>
+                        <div>
+                            <p class="latTrend">twitter clone app</p>
+                            <p class="latTwt">410k tweets</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
 
+            <section id="trdFolDiv">
+                <h1 id="trdText">Who to follow</h1>
+                <div>
+                    <div class="folDiv">
+                        <div class="folSubDiv">
+                            <img src="images/Chelsea_FC.png" class="folImg" alt="">
+                            <div>
+                                <p class="folName">Chelsea FC</p>
+                                <p class="folSubname">@chelsea_FC</p>
+                            </div>
+                        </div>
+                        <button class="folBtn">Follow</button>
+                    </div>
+
+                    <div class="folDiv">
+                        <div class="folSubDiv">
+                            <img src="images/oluDev.jpg" class="folImg" alt="">
+                            <div>
+                                <p class="folName">oluDev</p>
+                                <p class="folSubname">@olu_dev</p>
+                            </div>
+                        </div>
+                        <button class="folBtn">Follow</button>
+                    </div>
+
+                    <div class="folDiv">
+                        <div class="folSubDiv">
+                            <img src="images/fofana.jpg" class="folImg" alt="">
+                            <div>
+                                <p class="folName">Wes Fofana</p>
+                                <p class="folSubname">@lawestt</p>
+                            </div>
+                        </div>
+                        <button class="folBtn">Follow</button>
+                    </div>
+                </div>
             </section>
         </main>
     </section>
@@ -114,6 +234,10 @@
 
     <script>
         document.getElementById('sideBtn').addEventListener('click', ()=> {
+            document.getElementById("botDiv").classList.add("closeBot")
+            document.getElementById('side-menu').classList.add('openMenu')
+        })
+        document.getElementById('trdBtn').addEventListener('click', ()=> {
             document.getElementById("botDiv").classList.add("closeBot")
             document.getElementById('side-menu').classList.add('openMenu')
         })
@@ -128,6 +252,17 @@
         document.getElementById("trndIcon").addEventListener("click", () => {
             document.getElementById("trend-div").classList.add("openTrend")
         })
+
+        let folBtn = document.getElementsByClassName("folBtn")
+        for(let x=0; x<folBtn.length; x++) {
+            folBtn[x].addEventListener("click", ()=> {
+                if(folBtn[x].innerHTML === "Follow") {
+                    folBtn[x].innerHTML = "Following"
+                } else if(folBtn[x].innerHTML === "Following") {
+                    folBtn[x].innerHTML = "Follow"
+                } 
+            })
+        }
     </script>
 </body>
 </html>
