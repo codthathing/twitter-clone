@@ -10,7 +10,6 @@ body {
 }
 
 #menu-icon {
-    font-size: 2rem;
     cursor: default;
     color: white;
 }
@@ -37,6 +36,7 @@ body.colorBody {
 #side-menu {
     background-color: black;
     color: white;
+    overflow-y: auto;
 }
 
 #side-menu.colorSide {
@@ -317,6 +317,10 @@ body.colorBody {
         display: none;
     }
 
+    #menu-icon {
+        font-size: 2rem;
+    }
+
     @keyframes closeMenu {
         0% {right: 0;}
         50% {right: 50%;}
@@ -336,8 +340,8 @@ body.colorBody {
     }
 
     .defImg {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .names {
@@ -366,9 +370,12 @@ body.colorBody {
         top: 0;
         padding: 1rem 1rem 1rem 2rem;
         height: 100vh;
-        font-size: 2rem;
         display: flex;
         align-items: flex-end;
+    }
+
+    #bacBtn {
+        font-size: 2rem;
     }
 
     #bacHome.colorBackhome {
@@ -398,6 +405,7 @@ body.colorBody {
 
     #msgMenu {
         margin-top: 2rem;
+        margin-bottom: 4rem;
     }
 
     .msgDiv {
@@ -520,6 +528,7 @@ body.colorBody {
         margin-top: 1.5rem;
         border: 1px solid rgba(255, 255, 255, 0.5);
         padding: 0.25rem;
+        margin-bottom: 4rem;
     }
 
     #trdFolDiv.colorTrdFolDiv {
@@ -603,6 +612,10 @@ body.colorBody {
         display: none;
     }
 
+    #menu-icon {
+        font-size: 4rem;
+    }
+
     @keyframes closeMenu {
         0% {right: 0;}
         50% {right: 50%;}
@@ -684,6 +697,7 @@ body.colorBody {
 
     #msgMenu {
         margin-top: 3rem;
+        margin-bottom: 7.5rem;
     }
 
     .msgDiv {
@@ -891,6 +905,10 @@ body.colorBody {
     body {
         display: grid;
         grid-template-columns: 25% 45% 30%;
+    }
+
+    #menu-icon {
+        font-size: 2rem;
     }
 
     #side-menu {
