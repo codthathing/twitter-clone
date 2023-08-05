@@ -877,6 +877,7 @@ body.colorBody {
 
 
 @media all and (min-width: 1024px) {
+
     #home-page {
         padding: 1.5rem 1rem 1rem 1rem;
         height: 100vh;
