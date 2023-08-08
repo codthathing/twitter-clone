@@ -318,7 +318,7 @@ body.colorBody {
     }
 
     #menu-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     @keyframes closeMenu {
@@ -364,7 +364,7 @@ body.colorBody {
     }
 
     #bacHome {
-        background-color: rgb(0, 0, 0);
+        background-color: black;
         position: absolute;
         right: 0;
         top: 0;
@@ -375,7 +375,7 @@ body.colorBody {
     }
 
     #bacBtn {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #bacHome.colorBackhome {
@@ -441,7 +441,7 @@ body.colorBody {
     }
 
     .msgIcon {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     #trend-div {
@@ -613,7 +613,7 @@ body.colorBody {
     }
 
     #menu-icon {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     @keyframes closeMenu {
@@ -635,8 +635,8 @@ body.colorBody {
     }
 
     .defImg {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .names {
@@ -668,6 +668,10 @@ body.colorBody {
         font-size: 4rem;
         display: flex;
         align-items: flex-end;
+    }
+
+    #bacBtn {
+        font-size: 2.5rem;
     }
 
     #bacHome.colorBackhome {
@@ -733,7 +737,7 @@ body.colorBody {
     }
 
     .msgIcon {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #trend-div {
@@ -912,7 +916,7 @@ body.colorBody {
     }
 
     #menu-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #side-menu {
@@ -989,7 +993,7 @@ body.colorBody {
     }
 
     .msgIcon {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     #trend-div {
