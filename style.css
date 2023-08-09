@@ -45,11 +45,11 @@ body.colorBody {
 }
 
 .sidDiv {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .sidDiv.colorSidDiv {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .names {
@@ -193,12 +193,12 @@ body.colorBody {
 }
 
 #latDiv {
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 1rem;
 }
 
 #latDiv.colorLatdiv {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .latItem {
@@ -292,11 +292,11 @@ body.colorBody {
 
     #navbar {
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
     
     #navbar.colorNavbar {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     #side-menu {
@@ -384,7 +384,7 @@ body.colorBody {
 
     #botDiv {
         padding: 1rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.75);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     #botDiv.closeBot {
@@ -392,7 +392,7 @@ body.colorBody {
     }
 
     #botDiv.colorBotdiv {
-        border-top: 1px solid rgba(0, 0, 0, 0.75);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .botIcon {
@@ -410,12 +410,12 @@ body.colorBody {
 
     .msgDiv {
         gap: 0.5rem;
-        border-bottom: 0.25px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.25px solid rgba(255, 255, 255, 0.25);
         margin-bottom: 1rem;
     }
 
     .msgDiv.colorMsgDiv {
-        border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 0.25px solid rgba(0, 0, 0, 0.25);
     }
 
     .msgPro {
@@ -495,19 +495,19 @@ body.colorBody {
     .latItem {
         gap: 1rem;
         padding: 0.75rem 0.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem:first-child {
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem.colorLatitem {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .latItem:first-child.colorLatitem {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .latNum {
@@ -526,31 +526,31 @@ body.colorBody {
 
     #trdFolDiv {
         margin-top: 1.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         padding: 0.25rem;
         margin-bottom: 4rem;
     }
 
     #trdFolDiv.colorTrdFolDiv {
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv {
         padding: 0.75rem 0.5rem;
         padding-right: 2rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv:first-child {
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv.colorFoldiv {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv:first-child.colorFoldiv {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .folImg {
@@ -587,11 +587,11 @@ body.colorBody {
 
     #navbar {
         padding-bottom: 1rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     }
     
     #navbar.colorNavbar {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     #side-menu {
@@ -680,11 +680,11 @@ body.colorBody {
 
     #botDiv {
         padding: 2rem;
-        border-top: 2px solid rgba(255, 255, 255, 0.75);
+        border-top: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     #botDiv.colorBotdiv {
-        border-top: 2px solid rgba(0, 0, 0, 0.75);
+        border-top: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     #botDiv.closeBot {
@@ -706,12 +706,12 @@ body.colorBody {
 
     .msgDiv {
         gap: 1rem;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
         margin-bottom: 1.5rem;
     }
 
     .msgDiv.colorMsgDiv {
-        border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
     }
 
     .msgPro {
@@ -785,30 +785,30 @@ body.colorBody {
     }
 
     #latDiv {
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.25);
         padding: 0.5rem;
     }
 
     #latDiv.colorLatdiv {
-        border: 2px solid rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     .latItem {
         gap: 2rem;
         padding: 1rem 0.75rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem:first-child {
-        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-top: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem.colorLatitem {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     .latItem:first-child.colorLatitem {
-        border-top: 2px solid rgba(0, 0, 0, 0.5);
+        border-top: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     .latNum {
@@ -827,30 +827,30 @@ body.colorBody {
 
     #trdFolDiv {
         margin-top: 2rem;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.25);
         padding: 0.5rem;
     }
 
     #trdFolDiv.colorTrdFolDiv {
-        border: 2px solid rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv {
         padding: 1rem 0.75rem;
         padding-right: 4rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv:first-child {
-        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-top: 2px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv.colorFoldiv {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv:first-child.colorFoldiv {
-        border-top: 2px solid rgba(0, 0, 0, 0.5);
+        border-top: 2px solid rgba(0, 0, 0, 0.25);
     }
     
     .folImg {
@@ -891,11 +891,11 @@ body.colorBody {
 
     #navbar {
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
     
     #navbar.colorNavbar {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .defImg {
@@ -962,12 +962,12 @@ body.colorBody {
 
     .msgDiv {
         gap: 0.75rem;
-        border-bottom: 0.25px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.25px solid rgba(255, 255, 255, 0.25);
         margin-bottom: 1rem;
     }
 
     .msgDiv.colorMsgDiv {
-        border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 0.25px solid rgba(0, 0, 0, 0.25);
     }
 
     .msgPro {
@@ -1021,19 +1021,19 @@ body.colorBody {
     .latItem {
         gap: 1rem;
         padding: 0.75rem 0.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem:first-child {
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .latItem.colorLatitem {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .latItem:first-child.colorLatitem {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .latNum {
@@ -1052,30 +1052,30 @@ body.colorBody {
 
     #trdFolDiv {
         margin-top: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         padding: 0.25rem;
     }
 
     #trdFolDiv.colorTrdFolDiv {
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv {
         padding: 0.75rem 0.5rem;
         padding-right: 2rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv:first-child {
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .folDiv.colorFoldiv {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     }
 
     .folDiv:first-child.colorFoldiv {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
     
     .folImg {
