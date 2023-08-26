@@ -340,17 +340,17 @@ body.colorBody {
     }
 
     .defImg {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .names {
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin: 0.5rem 0 0.25rem 0;
     } 
 
     .subNames {
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin: 0.25rem 0 2rem 0;
     }
 
@@ -359,7 +359,7 @@ body.colorBody {
     }
 
     .text {
-        font-size: 1.2rem; 
+        font-size: 0.75rem; 
         margin: 2rem 0;
     }
 
@@ -375,7 +375,7 @@ body.colorBody {
     }
 
     #bacBtn {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #bacHome.colorBackhome {
@@ -396,7 +396,7 @@ body.colorBody {
     }
 
     .botIcon {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .botIcon:hover {
@@ -419,8 +419,8 @@ body.colorBody {
     }
 
     .msgPro {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .msgHead {
@@ -428,15 +428,15 @@ body.colorBody {
     }
 
     .msgNames {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     
     .msgSubnames {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .msgText {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         margin: 0.25rem 0 0.5rem 0;
     }
 
@@ -471,7 +471,7 @@ body.colorBody {
 
     #trdText {
         padding: 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .trdNav {
@@ -485,7 +485,7 @@ body.colorBody {
     #trdInput {
         border-radius: 1.5rem;
         padding: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     #latDiv {
@@ -511,16 +511,16 @@ body.colorBody {
     }
 
     .latNum {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .latTrend {
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin-bottom: 0.25rem;
     }
 
     .latTwt {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         margin-top: 0.25rem;
     }
 
@@ -560,17 +560,17 @@ body.colorBody {
     }
 
     .folName {
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin-bottom: 0.25rem;
     }
 
     .folSubname {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         margin-top: 0.25rem;
     }
 
     .folBtn {
-        font-size: 1rem;
+        font-size: 0.75rem;
         padding: 0 1rem;
     }
 }
@@ -635,17 +635,17 @@ body.colorBody {
     }
 
     .defImg {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     .names {
-        font-size: 2rem;
+        font-size: 1rem;
         margin: 1rem 0 0.5rem 0;
     } 
 
     .subNames {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 1rem 0 3rem 0;
     }
 
@@ -654,7 +654,7 @@ body.colorBody {
     }
 
     .text {
-        font-size: 2rem; 
+        font-size: 1rem; 
         margin: 3rem 0;
     }
 
@@ -671,7 +671,7 @@ body.colorBody {
     }
 
     #bacBtn {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     #bacHome.colorBackhome {
@@ -692,7 +692,7 @@ body.colorBody {
     }
 
     .botIcon {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .botIcon:hover {
@@ -715,8 +715,8 @@ body.colorBody {
     }
 
     .msgPro {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     .msgHead {
@@ -724,20 +724,20 @@ body.colorBody {
     }
 
     .msgNames {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
     
     .msgSubnames {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
 
     .msgText {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: 0.5rem 0 1.5rem 0;
     }
 
     .msgIcon {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #trend-div {
@@ -767,7 +767,7 @@ body.colorBody {
 
     #trdText {
         padding: 1.5rem 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .trdNav {
@@ -781,7 +781,7 @@ body.colorBody {
     #trdInput {
         border-radius: 2rem;
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     #latDiv {
@@ -812,16 +812,16 @@ body.colorBody {
     }
 
     .latNum {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .latTrend {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
     .latTwt {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
         margin-top: 0.5rem;
     }
 
@@ -854,23 +854,23 @@ body.colorBody {
     }
     
     .folImg {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
         margin-right: 1rem;
     }
 
     .folName {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
     .folSubname {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
         margin-top: 0.5rem;
     }
 
     .folBtn {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0 1rem;
     }
 }
@@ -931,6 +931,7 @@ body.colorBody {
         height: 4rem;
         border-radius: 50%;
         display: block;
+        cursor: default;
     }
 
     .names {
@@ -944,7 +945,7 @@ body.colorBody {
     }
 
     .text {
-        font-size: 1.2rem; 
+        font-size: 1rem; 
         margin: 1.5rem 0;
     }
 
@@ -971,8 +972,8 @@ body.colorBody {
     }
 
     .msgPro {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .msgHead {
@@ -980,11 +981,11 @@ body.colorBody {
     }
 
     .msgNames {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .msgSubnames {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .msgText {
@@ -1005,6 +1006,7 @@ body.colorBody {
 
     #trdText {
         padding: 1rem 0;
+        font-size: 1.25rem;
     }
 
     #trdInput {
